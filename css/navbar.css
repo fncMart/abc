@@ -1,0 +1,98 @@
+
+/* Navbar section */
+
+.nav {
+    z-index: 99999999;
+    width: 100%;
+    height: 70px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #fdb721;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    overflow: hidden;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+
+.nav div.main_list {
+    height: 50px;
+    float: right !important;
+    margin-top: 7px;
+}
+
+.nav div.main_list ul {
+    height: 55px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    height: 55px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 55px;
+    font-size: 1.2rem;
+}
+.fas{
+    color: #fff;
+}
+.far{
+    color: #fff;
+}
+.nav div.main_list ul li a:hover {
+    text-decoration: underline;
+}
+.show-mobile{
+    display: none !important;
+}
+
+/* To make Navigation bar fixed*/ 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999999;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #fdb721;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+@media screen and (max-width: 768px){
+    .nav div.main_list ul li{
+        padding-right: 1.5rem;
+    }
+    .show-mobile{
+        display: flex !important;
+    }
+    .hide-mobile{
+        display: none !important;
+    }
+}
